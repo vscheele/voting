@@ -6,7 +6,7 @@ function updatediv(content){
 function initform(){
 
     $("#idform").submit(function(e) {
-             window.setInterval(function(){ refreshvotes(); }, 5000);
+             window.setInterval(function(){ refreshvotes(); }, 10000);
             document.getElementById('formdiv').style.display='none'; // hide voting div
             var url = "votedajax"; // the script where you handle the form input.
             var test=$(this).serialize();
